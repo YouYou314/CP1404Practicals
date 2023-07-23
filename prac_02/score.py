@@ -6,7 +6,7 @@ def main():
     result = get_score_result(score)
     print(result)
 
-    random_score = random.uniform(0, 100)
+    random_score = random.randint(0, 100)
     result = get_score_result(random_score)
     print(f"Random Score: {random_score:.2f};\n{result}")
 
