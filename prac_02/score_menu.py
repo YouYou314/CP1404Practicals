@@ -1,4 +1,3 @@
-import random
 Menu = input("(G)et a valid score"
              "(P)rint result"
              "(S)how stars"
@@ -25,10 +24,6 @@ def main():
         choice = input("Your choice: ").upper()
     else:
         print("Farewell.")
-
-    random_score = random.uniform(0, 100)
-    result = get_score_result(random_score)
-    print(f"Random Score: {random_score:.2f};\n{result}")
 
 
 def get_valid_score(score):
