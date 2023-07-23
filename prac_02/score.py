@@ -1,7 +1,14 @@
+import random
+
+
 def main():
     score = float(input("Enter score: "))
     result = get_score_result(score)
     print(result)
+
+    random_score = random.uniform(0, 100)
+    result = get_score_result(random_score)
+    print(f"Random Score: {random_score:.2f};\n{result}")
 
 
 def get_score_result(score):
