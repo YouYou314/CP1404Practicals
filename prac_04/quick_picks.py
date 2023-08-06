@@ -7,7 +7,7 @@ NUMBERS_PER_LINE = 6
 
 def main():
     """ Generate quick picks"""
-    number_of_quik_picks = int(input("How many quick picks?"))
+    number_of_quick_picks = int(input("How many quick picks?"))
     while number_of_quik_picks < 0:
         print("Invalid.")
         number_of_quik_picks = int(input("How many quick picks?"))
@@ -17,4 +17,15 @@ def main():
         print(" ".join(f"{number:2}" for number in quick_pick))
 
 
+def generate_quick_pick(n):
+    quick_pick = []
+    for i in range(n):
+        number = random.randint(MIN_NUMBER, MAX_NUMBER)
+        while number in quick_pick:
+            number = random.randint(MIN_NUMBER, MAX_NUMBER)
+        quick_pick.append(number)
+    quick_pick.sort()
+    return quick_pick
 
+
+main()
