@@ -18,6 +18,7 @@ def main():
 
 
 def generate_quick_pick(n):
+    """Generate a quick pick with n numbers"""
     quick_pick = []
     for i in range(n):
         number = random.randint(MIN_NUMBER, MAX_NUMBER)
