@@ -11,8 +11,9 @@ print(CODE_TO_NAME)
 
 state_code = input("Enter short state: ")
 while state_code != "":
-    if state_code in CODE_TO_NAME:
-        print(state_code, "is", CODE_TO_NAME[state_code])
+    upper_state_code = state_code.upper()  # Convert user input to uppercase
+    if upper_state_code in CODE_TO_NAME:
+        print(upper_state_code, "is", CODE_TO_NAME[upper_state_code])
     else:
         print("Invalid short state")
     state_code = input("Enter short state: ")
