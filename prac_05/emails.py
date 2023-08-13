@@ -8,10 +8,8 @@ def extract_name(email):
 def main():
     user_data = {}
 
+    email = input("Email: ")
     while True:
-        email = input("Email: ")
-        if not email:
-            break
 
         name = extract_name(email)
         correct_name = input(f"Is your name {name}? (Y/n) ").strip().lower()
@@ -21,4 +19,5 @@ def main():
         else:
             name = input("Name: ")
             user_data[email] = name
+        email = input("Email: ")
 
