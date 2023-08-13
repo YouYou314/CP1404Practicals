@@ -1,0 +1,13 @@
+COLOR_TO_HEX = {
+    "ALICEBLUE": "FOF8FF",
+    "ANTIQUEWHITE": "#FAEBD7",
+    "AQUA": "#00FFFF",
+    "AZURE": "#F0FFFF",
+    "BEIGE": "#F5F5DC",
+    "BISQUE": "#FFE4C4",
+    "BLACK": "#000000",
+    "BLANCHEDALMOND": "#FFEBCD",
+    "BLUE": "#0000FF",
+    "BLUEVIOLET": "#8A2BE2",
+}
+
