@@ -9,8 +9,7 @@ def main():
     user_data = {}
 
     email = input("Email: ")
-    while True:
-
+    while email != "":
         name = extract_name(email)
         correct_name = input(f"Is your name {name}? (Y/n) ").strip().lower()
 
@@ -21,3 +20,10 @@ def main():
             user_data[email] = name
         email = input("Email: ")
 
+    print("\nUser Data:")
+    for email, name in user_data.items():
+        print(f"{name} ({email})")
+
+
+if __name__ == "__main__":
+    main()
