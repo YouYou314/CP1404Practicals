@@ -10,7 +10,7 @@ def main():
         year = int(input("Year: "))
         cost = float(input("Cost: "))
         guitar_add = Guitar(name, year, cost)
-        guitar.append(guitar_add)
+        guitars.append(guitar_add)
         print(guitar_add, "added.")
         name = input("Name: ")
 
